@@ -1,7 +1,7 @@
 library(ggrepel)
 library(ggplot2)
 
-CBF_PCA <- function(data, groups, useLabels = FALSE, labels = "", pcs = c(1,2), type = 'scores', scale = TRUE, legendName = "Cog task", absolute_loadings = FALSE) {
+PCA_function <- function(data, groups, useLabels = FALSE, labels = "", pcs = c(1,2), type = 'scores', scale = TRUE, legendName = "Cog task", absolute_loadings = FALSE) {
   
   data[is.na(data)] <- 0
   # Vector to calculate colors based on the number of groups
